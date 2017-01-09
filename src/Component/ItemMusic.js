@@ -10,7 +10,6 @@ export default class ItemMusic extends Component {
             <div className="ItemMusic__title">{this.props.result.name}</div>
             <a href={this.props.result.audiodownload}>download</a>
             <div>{this.props.result.artist_name}</div>
-            <a target="_blank" href={this.props.result.license_ccurl}>licence</a>
         </div>
       </li>
     );

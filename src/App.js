@@ -21,9 +21,17 @@ class App extends Component {
   // arg 2 event obj 
   onSearch (jam ,e){
     let value = e.target.value;
-    jam.tracks({namesearch:value},(err,data)=> {
-      this.setState({results : data.results});
-    }); 
+    if(value.length > 0){
+      jam.tracks({namesearch:value},(err,data)=> {
+        this.setState({results : data.results});
+      }); 
+    }
+    else{
+      jam.tracks({namesearch:value},(err,data)=> {
+        this.setState({results : null});
+      }); 
+    }
+    
   }
   
   OnAudioSelect(e){

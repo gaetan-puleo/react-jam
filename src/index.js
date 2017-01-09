@@ -13,7 +13,7 @@ var jam = new Jamendo({
     client_id : clientApi,     // Specify your client_id
     protocol  : 'http',           // HTTP protocol to use, http or https
     version   : 'v3.0',           // Use the specified API version
-    debug     : false   ,          // Print the whole response object and body in the console
+    debug     : false  ,          // Print the whole response object and body in the console
     rejectUnauthorized: false
 });
 ReactDOM.render(
